@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion versions.compile_sdk_version
+    buildToolsVersion versions.build_tool_version
+
+    defaultConfig {
+        applicationId "com.beomjo.android.compilation"
+        minSdkVersion versions.min_sdk_version
+        targetSdkVersion versions.target_sdk_version
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+    api deps.kotlin.sdk
+    api deps.kotlin.coroutines_core
+    api deps.kotlin.coroutines_android
+
+    api deps.androidx.core_ktx
+    api deps.androidx.material
+    api deps.androidx.constraint_layout
+    api deps.androidx.app_compat
+    api deps.androidx.lifecycle_extensions
+    api deps.androidx.lifecycle_viewmodel_ktx
+    api deps.androidx.lifecycle_livedata_ktx
+    api deps.androidx.activity_ktx
+    api deps.androidx.fragment_ktx
+
+    api deps.library.rxjava
+    api deps.library.rxandroid
+    api deps.library.rxkotlin
+
+    api deps.library.okhttp
+    api deps.library.okhttp_logging_interceptor
+    api deps.library.retrofit2
+    api deps.library.converter_gson
+
+    api deps.library.material
+    api deps.library.gson
+
+    api deps.library.rxbinding_kotlin
+    api deps.library.glide
+    api deps.library.jsoup
+    api deps.library.lottie
+
+    kapt deps.kapt.glide_compiler
+
+    testApi deps.test.junit
+    androidTestApi deps.test.runner
+    androidTestApi deps.test.espresso_core
+}
