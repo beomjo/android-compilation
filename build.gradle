@@ -9,7 +9,6 @@ android {
     buildToolsVersion versions.build_tool_version
 
     defaultConfig {
-        applicationId "com.beomjo.android.compilation"
         minSdkVersion versions.min_sdk_version
         targetSdkVersion versions.target_sdk_version
         versionCode 1
