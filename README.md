@@ -1,6 +1,7 @@
 # Android Compilation
 
 ## Gradle
+Android Dependency, Utility, Etc.. Compilation Library
 
 ### build.gradle(project)
 Add below codes to your root build.gradle file (not your module build.gradle file).
