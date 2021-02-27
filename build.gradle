@@ -80,6 +80,7 @@ dependencies {
     kapt deps.kapt.glide_compiler
 
     testApi deps.test.junit
+    testApi deps.test.arch.core
     androidTestApi deps.test.runner
     androidTestApi deps.test.espresso_core
 }
