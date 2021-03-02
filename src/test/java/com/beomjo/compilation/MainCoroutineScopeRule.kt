@@ -1,4 +1,4 @@
-package com.beomjo.compilation.util
+package com.beomjo.compilation
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
