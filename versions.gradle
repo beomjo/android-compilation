@@ -17,6 +17,7 @@ ext {
                     arch_core    : '2.1.0',
                     coroutines_android : '1.4.1',
                     mockito : '3.5.13',
+                    androidx_test_core: '1.4.0-alpha04'
             ],
 
             androidx           : [
@@ -71,7 +72,8 @@ ext {
                             core: "androidx.arch.core:core-testing:$versions.test.arch_core"
                     ],
                     coroutine_test: "org.jetbrains.kotlinx:kotlinx-coroutines-test:$versions.test.coroutines_android",
-                    mockito: "org.mockito:mockito-core:$versions.test.mockito"
+                    mockito: "org.mockito:mockito-core:$versions.test.mockito",
+                    androidx_test_core: "androidx.test:core:$versions.test.androidx_test_core"
             ],
             androidx : [
                     material               : "androidx.compose.material:material:$versions.androidx.material",
