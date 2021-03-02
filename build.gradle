@@ -81,6 +81,8 @@ dependencies {
 
     testApi deps.test.junit
     testApi deps.test.arch.core
+    testApi deps.test.coroutine_test
+
     androidTestApi deps.test.runner
     androidTestApi deps.test.espresso_core
 }
