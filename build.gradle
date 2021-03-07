@@ -83,7 +83,7 @@ dependencies {
     testApi deps.test.arch.core
     testApi deps.test.androidx_test_core
     testApi deps.test.coroutine_test
-    testApi deps.test.mockito
+    testApi deps.test.mockk
 
     androidTestApi deps.test.runner
     androidTestApi deps.test.espresso_core
