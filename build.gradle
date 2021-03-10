@@ -59,6 +59,7 @@ dependencies {
     api deps.androidx.lifecycle_livedata_ktx
     api deps.androidx.activity_ktx
     api deps.androidx.fragment_ktx
+    api deps.androidx.swipe_refresh
 
     api deps.library.rxjava
     api deps.library.rxandroid
