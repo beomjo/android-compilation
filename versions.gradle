@@ -17,7 +17,7 @@ ext {
                     arch_core         : '2.1.0',
                     coroutines_android: '1.4.1',
                     mockito           : '3.5.13',
-                    mockk             : '1.10.6',
+                    mockk             : '1.11.0',
                     androidx_test_core: '1.4.0-alpha04'
             ],
 
