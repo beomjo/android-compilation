@@ -54,7 +54,6 @@ dependencies {
     api deps.androidx.material
     api deps.androidx.constraint_layout
     api deps.androidx.app_compat
-    api deps.androidx.lifecycle_extensions
     api deps.androidx.lifecycle_viewmodel_ktx
     api deps.androidx.lifecycle_livedata_ktx
     api deps.androidx.activity_ktx
