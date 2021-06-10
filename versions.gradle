@@ -49,7 +49,9 @@ ext {
             lottie             : '3.6.1',
 
             dagger2            : "2.36",
-            hilt               : "2.36",
+            hilt               : [
+                    core: '2.36',
+            ],
     ]
 
     deps = [
@@ -92,8 +94,8 @@ ext {
                     compiler: "com.google.dagger:dagger-compiler:$versions.dagger2",
             ],
             hilt     : [
-                    android : "com.google.dagger:hilt-android:$versions.hilt",
-                    compiler: "com.google.dagger:hilt-compiler:$versions.hilt",
+                    android : "com.google.dagger:hilt-android:$versions.hilt.core",
+                    compiler: "com.google.dagger:hilt-compiler:$versions.hilt.core",
             ],
             library  : [
                     rxjava                    : "io.reactivex.rxjava2:rxjava:$versions.rx.rxjava",
