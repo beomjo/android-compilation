@@ -7,7 +7,7 @@ ext {
             gradle             : "4.1.2",
 
             kotlin             : [
-                    sdk      : '1.5.20',
+                    sdk      : '1.5.10',
                     coroutine: '1.5.0',
             ],
             test               : [
@@ -48,9 +48,9 @@ ext {
             jsoup              : '1.13.1',
             lottie             : '3.6.1',
 
-            dagger2            : "2.36",
+            dagger2            : "2.37",
             hilt               : [
-                    core: '2.36',
+                    core: '2.37',
             ],
     ]
 
