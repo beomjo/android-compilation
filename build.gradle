@@ -46,47 +46,21 @@ android {
 }
 
 dependencies {
-    api deps.kotlin.sdk
-    api deps.kotlin.coroutines_core
-    api deps.kotlin.coroutines_android
+    implementation deps.kotlin.sdk
 
-    api deps.androidx.core_ktx
-    api deps.androidx.material
-    api deps.androidx.constraint_layout
-    api deps.androidx.app_compat
-    api deps.androidx.lifecycle_viewmodel_ktx
-    api deps.androidx.lifecycle_livedata_ktx
-    api deps.androidx.activity_ktx
-    api deps.androidx.fragment_ktx
-    api deps.androidx.swipe_refresh
+    implementation deps.library.gson
 
-    api deps.library.rxjava
-    api deps.library.rxandroid
-    api deps.library.rxkotlin
+    implementation deps.androidx.lifecycle_viewmodel_ktx
+    implementation deps.androidx.lifecycle_livedata_ktx
 
-    api deps.library.okhttp
-    api deps.library.okhttp_logging_interceptor
-    api deps.library.retrofit2
-    api deps.library.converter_gson
+    testImplementation deps.test.mockk
 
-    api deps.library.material
-    api deps.library.gson
+    testImplementation deps.test.junit
+    testImplementation deps.test.arch.core
+    testImplementation deps.test.androidx_test_core
 
-    api deps.library.rxbinding_kotlin
-    api deps.library.glide
-    api deps.library.jsoup
-    api deps.library.lottie
-
-    kapt deps.kapt.glide_compiler
-
-    testApi deps.test.junit
-    testApi deps.test.arch.core
-    testApi deps.test.androidx_test_core
-    testApi deps.test.coroutine_test
-    testApi deps.test.mockk
-
-    androidTestApi deps.test.runner
-    androidTestApi deps.test.espresso_core
+    androidTestImplementation deps.test.runner
+    androidTestImplementation deps.test.espresso_core
 }
 
 repositories {
