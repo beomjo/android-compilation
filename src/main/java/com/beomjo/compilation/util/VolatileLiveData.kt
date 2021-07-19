@@ -39,7 +39,7 @@ open class VolatileLiveData<T> : MutableLiveData<T>() {
         }
     }
 
-    private class ObserverWrapper<T>(private var currentSeq: AtomicInteger, private val observer: Observer<in T>) :Observer<T> {
+    private class ObserverWrapper<T>(private var currentSeq: AtomicInteger, private val observer: Observer<in T>) : Observer<T> {
         private val initialSeq = currentSeq.get()
         private var _observer: Observer<in T> = Observer {
             if (currentSeq.get() != initialSeq) {

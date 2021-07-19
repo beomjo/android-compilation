@@ -51,7 +51,6 @@ fun <T> LiveData<T>.getOrAwaitValue(): T {
     return data[0] as T
 }
 
-
 fun <T> Event<*>.getContent(): T {
     @Suppress("UNCHECKED_CAST")
     return this.getContentIfNotHandled() as T
