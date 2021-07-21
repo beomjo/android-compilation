@@ -48,17 +48,27 @@ android {
 dependencies {
     implementation deps.kotlin.sdk
 
-    implementation deps.library.gson
 
+
+    implementation deps.androidx.core_ktx
+    implementation deps.androidx.material
+    implementation deps.androidx.constraint_layout
+    implementation deps.androidx.app_compat
+    implementation deps.androidx.lifecycle_viewmodel_ktx
+    implementation deps.androidx.lifecycle_livedata_ktx
+    implementation deps.androidx.activity_ktx
+    implementation deps.androidx.fragment_ktx
     implementation deps.androidx.lifecycle_viewmodel_ktx
     implementation deps.androidx.lifecycle_livedata_ktx
 
-    testImplementation deps.test.mockk
+    implementation deps.library.gson
+    implementation deps.library.glide
+    kapt deps.kapt.glide_compiler
 
+    testImplementation deps.test.mockk
     testImplementation deps.test.junit
     testImplementation deps.test.arch.core
     testImplementation deps.test.androidx_test_core
-
     androidTestImplementation deps.test.runner
     androidTestImplementation deps.test.espresso_core
 }
