@@ -14,20 +14,9 @@
  * limitations under the License.
  */
 
-package com.beomjo.compilation.util
+package com.beomjo.compilation.extentions
 
-data class Event<out T>(private val content: T) {
-    var hasBeenHandled = false
-        private set
+import android.content.Context
+import android.util.TypedValue
 
-    fun getContentIfNotHandled(): T? {
-        return if (hasBeenHandled) {
-            null
-        } else {
-            hasBeenHandled = true
-            content
-        }
-    }
-
-    fun peekContent(): T = content
-}
+fun Context.dpToPx(dp: Float): Int = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, resources.displayMetrics).toInt()

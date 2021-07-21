@@ -14,20 +14,10 @@
  * limitations under the License.
  */
 
-package com.beomjo.compilation.util
+package com.beomjo.compilation.extentions
 
-data class Event<out T>(private val content: T) {
-    var hasBeenHandled = false
-        private set
+import android.graphics.Color
 
-    fun getContentIfNotHandled(): T? {
-        return if (hasBeenHandled) {
-            null
-        } else {
-            hasBeenHandled = true
-            content
-        }
-    }
-
-    fun peekContent(): T = content
+fun String.parseColor(): Int {
+    return Color.parseColor(this)
 }
