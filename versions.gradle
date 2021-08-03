@@ -4,7 +4,7 @@ ext {
             min_sdk_version    : 21,
             build_tool_version : "30.0.2",
             target_sdk_version : 30,
-            gradle             : "4.1.2",
+            gradle             : "7.0.0",
 
             kotlin             : [
                     sdk      : '1.5.10',
